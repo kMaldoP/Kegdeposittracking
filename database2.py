@@ -1,5 +1,5 @@
 
-####This version came recommend from another developer as a way to seperate data collection from the class itself. It was explained to me that this is best practice
+# This version came recommend from another developer as a way to seperate data collection from the class itself. It was explained to me that this is best practice
 
 class User:
     def __init__(self, date, name, phone, shells, taps):
@@ -12,8 +12,7 @@ class User:
         swaps = []
         self.swaps = swaps
 
-
-def change_value(self):
+    def change_value(self):
         nshells = int(input("enter the new number of kegs:  "))
         ntaps = int(input("Enter new number of taps: "))
         self.shells = nshells
