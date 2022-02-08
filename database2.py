@@ -7,7 +7,7 @@ class User:
         self.name = name
         self.phone = phone
         self.shells = shells
-        self.taps = taps{}
+        self.taps = taps
         self.total = (shells * 100) + (taps * 50)
         swaps = []
         self.swaps = swaps
