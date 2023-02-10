@@ -1,3 +1,5 @@
+
+
 class User:
     def __init__(self, date, name, phone, shells, taps):
         self.date = date
@@ -16,6 +18,7 @@ class User:
         phone = input("Enter the phone number: ")
         shells = int(input('Enter the number of shells:    '))
         taps = int(input('Enter the number of taps:    '))
+        print("New User Created")
         return User(date, name, phone, shells, taps)
 
     def change_value(self):
@@ -43,8 +46,7 @@ class User:
             f"You have changed the number of shells to {self.shells}\nYour new total is {self.total}")
 
     def tap_return(self):
-        returned_taps = int(
-            input("Enter the number of taps you are returning:  "))
+        returned_taps = int(input("Enter the number of taps you are returning:  "))
         self.taps -= returned_taps
         self.total = (self.taps * 50) + (self.shells * 100)
         print(
